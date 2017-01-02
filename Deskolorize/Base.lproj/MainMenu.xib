@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Deskolorize" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="WM9-XT-MDq" customClass="MenuController" customModule="Deskolorize" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="HBs-eU-sR3" id="sUe-nt-CEl"/>
+            </connections>
+        </customObject>
+        <menu id="HBs-eU-sR3">
+            <items>
+                <menuItem title="Next" id="eLK-oU-1aE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="nextClicked:" target="WM9-XT-MDq" id="LMy-kr-icq"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="PGI-Nu-vZt"/>
+                <menuItem title="Preferences" id="OCS-V8-zcJ" userLabel="Preferences">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClicked:" target="WM9-XT-MDq" id="1xt-YI-IVy"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="About" id="HtN-QG-8Ya">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="aboutClicked:" target="WM9-XT-MDq" id="XHi-s2-fZc"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="kwQ-4n-xfa"/>
+                <menuItem title="Quit" id="uwl-6Q-pnt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClickedWithSender:" target="WM9-XT-MDq" id="4yq-2I-Lzw"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>

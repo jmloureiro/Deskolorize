@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF6931121E156599006B7FC2 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6931101E156599006B7FC2 /* PreferencesWindow.swift */; };
+		CF6931131E156599006B7FC2 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6931111E156599006B7FC2 /* PreferencesWindow.xib */; };
+		CF8EAC061E0C328800C735A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EAC051E0C328800C735A4 /* AppDelegate.swift */; };
+		CF8EAC0B1E0C328800C735A4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8EAC091E0C328800C735A4 /* MainMenu.xib */; };
+		CF8EAC131E0C3EA900C735A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8EAC121E0C3EA900C735A4 /* Assets.xcassets */; };
+		CF8EAC151E0C409800C735A4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EAC141E0C409800C735A4 /* MenuController.swift */; };
+		CF8EAC171E0C42D000C735A4 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EAC161E0C42D000C735A4 /* UnsplashAPI.swift */; };
+		CFAD10181E13EE8100E30DD1 /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD10161E13EE8100E30DD1 /* AboutWindow.swift */; };
+		CFAD10191E13EE8100E30DD1 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFAD10171E13EE8100E30DD1 /* AboutWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF6931101E156599006B7FC2 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		CF6931111E156599006B7FC2 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		CF8EAC021E0C328800C735A4 /* Deskolorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskolorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8EAC051E0C328800C735A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF8EAC0A1E0C328800C735A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF8EAC0C1E0C328800C735A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8EAC121E0C3EA900C735A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF8EAC141E0C409800C735A4 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		CF8EAC161E0C42D000C735A4 /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		CFAD10161E13EE8100E30DD1 /* AboutWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+		CFAD10171E13EE8100E30DD1 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF8EABFF1E0C328800C735A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF8EABF91E0C328800C735A4 = {
+			isa = PBXGroup;
+			children = (
+				CF8EAC041E0C328800C735A4 /* Deskolorize */,
+				CF8EAC031E0C328800C735A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8EAC031E0C328800C735A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8EAC021E0C328800C735A4 /* Deskolorize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8EAC041E0C328800C735A4 /* Deskolorize */ = {
+			isa = PBXGroup;
+			children = (
+				CF8EAC121E0C3EA900C735A4 /* Assets.xcassets */,
+				CF8EAC051E0C328800C735A4 /* AppDelegate.swift */,
+				CF8EAC091E0C328800C735A4 /* MainMenu.xib */,
+				CF8EAC0C1E0C328800C735A4 /* Info.plist */,
+				CF8EAC141E0C409800C735A4 /* MenuController.swift */,
+				CF8EAC161E0C42D000C735A4 /* UnsplashAPI.swift */,
+				CFAD10161E13EE8100E30DD1 /* AboutWindow.swift */,
+				CFAD10171E13EE8100E30DD1 /* AboutWindow.xib */,
+				CF6931101E156599006B7FC2 /* PreferencesWindow.swift */,
+				CF6931111E156599006B7FC2 /* PreferencesWindow.xib */,
+			);
+			path = Deskolorize;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF8EAC011E0C328800C735A4 /* Deskolorize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8EAC0F1E0C328800C735A4 /* Build configuration list for PBXNativeTarget "Deskolorize" */;
+			buildPhases = (
+				CF8EABFE1E0C328800C735A4 /* Sources */,
+				CF8EABFF1E0C328800C735A4 /* Frameworks */,
+				CF8EAC001E0C328800C735A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deskolorize;
+			productName = Deskolorize;
+			productReference = CF8EAC021E0C328800C735A4 /* Deskolorize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF8EABFA1E0C328800C735A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ZOP;
+				TargetAttributes = {
+					CF8EAC011E0C328800C735A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF8EABFD1E0C328800C735A4 /* Build configuration list for PBXProject "Deskolorize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF8EABF91E0C328800C735A4;
+			productRefGroup = CF8EAC031E0C328800C735A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF8EAC011E0C328800C735A4 /* Deskolorize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF8EAC001E0C328800C735A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6931131E156599006B7FC2 /* PreferencesWindow.xib in Resources */,
+				CF8EAC131E0C3EA900C735A4 /* Assets.xcassets in Resources */,
+				CF8EAC0B1E0C328800C735A4 /* MainMenu.xib in Resources */,
+				CFAD10191E13EE8100E30DD1 /* AboutWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8EABFE1E0C328800C735A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8EAC151E0C409800C735A4 /* MenuController.swift in Sources */,
+				CF6931121E156599006B7FC2 /* PreferencesWindow.swift in Sources */,
+				CF8EAC171E0C42D000C735A4 /* UnsplashAPI.swift in Sources */,
+				CF8EAC061E0C328800C735A4 /* AppDelegate.swift in Sources */,
+				CFAD10181E13EE8100E30DD1 /* AboutWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF8EAC091E0C328800C735A4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8EAC0A1E0C328800C735A4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF8EAC0D1E0C328800C735A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF8EAC0E1E0C328800C735A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CF8EAC101E0C328800C735A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Deskolorize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zop.Deskolorize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CF8EAC111E0C328800C735A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Deskolorize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zop.Deskolorize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF8EABFD1E0C328800C735A4 /* Build configuration list for PBXProject "Deskolorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8EAC0D1E0C328800C735A4 /* Debug */,
+				CF8EAC0E1E0C328800C735A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8EAC0F1E0C328800C735A4 /* Build configuration list for PBXNativeTarget "Deskolorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8EAC101E0C328800C735A4 /* Debug */,
+				CF8EAC111E0C328800C735A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF8EABFA1E0C328800C735A4 /* Project object */;
+}

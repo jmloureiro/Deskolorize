@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutWindow" customModule="Deskolorize" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="YQC-0w-tO0" id="Mjc-XF-CrY"/>
+                <outlet property="versionLabel" destination="cbz-b1-qET" id="zZu-x9-Jt4"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="About Deskolorize" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="350" height="220"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="350" height="220"/>
+            <value key="maxSize" type="size" width="350" height="220"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0h-tf-Gcs">
+                        <rect key="frame" x="20" y="152" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="alG-jU-vbS"/>
+                            <constraint firstAttribute="width" constant="48" id="knb-9m-hZ5"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyDown" image="monitor" id="2M2-m1-Fvv"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32O-By-c0V">
+                        <rect key="frame" x="114" y="171" width="164" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="Ewd-Hf-bxh"/>
+                            <constraint firstAttribute="height" constant="29" id="KAM-hy-f1y"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Deskolorize" id="JKP-yA-ys8">
+                            <font key="font" metaFont="system" size="24"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmj-0p-KrN">
+                        <rect key="frame" x="114" y="152" width="66" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="Jne-Lx-kug"/>
+                            <constraint firstAttribute="height" constant="16" id="v6X-1k-rRw"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 0.1" id="cbz-b1-qET">
+                            <font key="font" metaFont="cellTitle"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kg-1R-e0l">
+                        <rect key="frame" x="20" y="52" width="310" height="50"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="e4E-ee-FEn">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView editable="NO" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="YQC-0w-tO0">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="310" height="50"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment>
+                                            <string key="content">Deskolorize is powered by Unsplash API.
+Icon made by Freepik from www.flaticon.com.</string>
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="x77-2M-AY1"/>
+                        </constraints>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="11n-ja-sgP">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="neg-7v-Vr2">
+                            <rect key="frame" x="-100" y="-100" width="15" height="133"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0kg-1R-e0l" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="FPO-NC-D2f"/>
+                    <constraint firstItem="Dmj-0p-KrN" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="48" id="Jki-2D-Ah4"/>
+                    <constraint firstItem="32O-By-c0V" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="48" id="JxZ-A0-Yw8"/>
+                    <constraint firstItem="32O-By-c0V" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="RkK-C7-jQO"/>
+                    <constraint firstItem="0kg-1R-e0l" firstAttribute="top" secondItem="Dmj-0p-KrN" secondAttribute="bottom" constant="50" id="gjF-rf-D7a"/>
+                    <constraint firstItem="Dmj-0p-KrN" firstAttribute="top" secondItem="32O-By-c0V" secondAttribute="bottom" constant="3" id="hhS-NN-daE"/>
+                    <constraint firstItem="Z0h-tf-Gcs" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="ln2-YL-ShZ"/>
+                    <constraint firstItem="Z0h-tf-Gcs" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="pAB-r4-oqr"/>
+                    <constraint firstAttribute="trailing" secondItem="0kg-1R-e0l" secondAttribute="trailing" constant="20" id="xcG-Jy-ZW8"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="137"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="monitor" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
+</document>

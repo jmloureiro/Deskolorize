@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindow" customModule="Deskolorize" customModuleProvider="target">
+            <connections>
+                <outlet property="featuredButton" destination="gUR-cK-EUH" id="8eq-Fm-fC8"/>
+                <outlet property="searchButton" destination="d8W-Rf-LB1" id="Eix-5n-Ycg"/>
+                <outlet property="searchTerm" destination="dtK-iO-b7B" id="biA-GU-A0P"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="258" height="180"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="258" height="180"/>
+            <value key="maxSize" type="size" width="258" height="180"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="258" height="180"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <stackView distribution="fillEqually" orientation="vertical" alignment="leading" spacing="3" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wh2-80-ULz">
+                        <rect key="frame" x="20" y="59" width="218" height="91"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="fqh-TV-u5c">
+                                <rect key="frame" x="-2" y="45" width="151" height="48"/>
+                                <buttonCell key="cell" type="check" title="Featured photos only" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gUR-cK-EUH">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="featuredButtonClicked:" target="-2" id="ajg-2B-w6h"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPP-Lk-21T">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="44"/>
+                                <subviews>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="d8W-Rf-LB1">
+                                        <rect key="frame" x="-2" y="28" width="133" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Apply search term" bezelStyle="regularSquare" imagePosition="left" inset="2" id="wuX-SP-IND">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <action selector="searchButtonClicked:" target="-2" id="JwD-UQ-lOy"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
+                                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-vM-iYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="search term" drawsBackground="YES" id="dtK-iO-b7B">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <action selector="searchTermUpdated:" target="-2" id="UXa-a0-AkZ"/>
+                                            </connections>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aQj-vM-iYn" secondAttribute="trailing" id="2A6-zo-GkA"/>
+                                    <constraint firstItem="aQj-vM-iYn" firstAttribute="leading" secondItem="kPP-Lk-21T" secondAttribute="leading" id="seE-DT-Me3"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kPP-Lk-21T" secondAttribute="trailing" id="Ge5-3z-1zE"/>
+                            <constraint firstItem="kPP-Lk-21T" firstAttribute="leading" secondItem="wh2-80-ULz" secondAttribute="leading" id="IY7-t0-4BV"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5g-Ee-oNg">
+                        <rect key="frame" x="8" y="-117" width="37" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="0sJ-Eb-vNP">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wh2-80-ULz" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="gMc-Mb-bqC"/>
+                    <constraint firstAttribute="trailing" secondItem="wh2-80-ULz" secondAttribute="trailing" constant="20" id="jX3-ht-ixL"/>
+                    <constraint firstItem="wh2-80-ULz" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="30" id="r2E-1T-YyT"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="111"/>
+        </window>
+    </objects>
+</document>
