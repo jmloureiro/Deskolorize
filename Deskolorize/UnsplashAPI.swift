@@ -15,7 +15,7 @@ struct Photo {
 
 class UnsplashAPI: NSObject {
         
-    let APPLICATION_ID = "<INSERT_APP_ID>"
+    let APPLICATION_ID = Bundle.main.object(forInfoDictionaryKey: "UnsplashApplicationID") as! String
     let BASE_URL = "https://api.unsplash.com/"
         
     func fetchPhotos(featured: Bool, term: String, success: @escaping ([Photo]) -> Void) {
