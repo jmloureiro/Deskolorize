@@ -16,12 +16,12 @@ struct Photo {
 class UnsplashAPI: NSObject {
         
     let APPLICATION_ID = Bundle.main.object(forInfoDictionaryKey: "UnsplashApplicationID") as! String
-    let BASE_URL = "https://api.unsplash.com/"
+    let BASE_URL = "https://api.unsplash.com"
         
     func fetchPhotos(featured: Bool, term: String, success: @escaping ([Photo]) -> Void) {
         let session = URLSession.shared
         
-        var urlString = "\(BASE_URL)/photos/random?client_id=\(APPLICATION_ID)&count=10&orientation=landscape"
+        var urlString = "\(BASE_URL)/photos/random?client_id=\(APPLICATION_ID)&count=20&orientation=landscape"
         
         if featured {
             urlString += "&featured"
