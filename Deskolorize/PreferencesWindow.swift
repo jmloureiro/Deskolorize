@@ -33,6 +33,7 @@ class PreferencesWindow: NSWindowController {
         
         featuredButton.state = PreferencesWindow.featured() ? NSOnState : NSOffState
         searchButton.state = PreferencesWindow.search() ? NSOnState : NSOffState
+        searchTerm.isEnabled = PreferencesWindow.search()
         searchTerm.stringValue = PreferencesWindow.term()
     }
     
