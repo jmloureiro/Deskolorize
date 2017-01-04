@@ -22,8 +22,9 @@ class MenuController: NSObject {
     var currentPhotoIndex = 0
     
     override func awakeFromNib() {
-        let icon = NSImage(named: "icon")
-        //icon?.isTemplate = true // best for dark mode
+        let icon = NSImage(named: "monitor")?.copy() as! NSImage
+        icon.size = CGSize(width: 19, height: 17)
+        icon.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = statusMenu
         

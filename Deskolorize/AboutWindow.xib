@@ -27,27 +27,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0h-tf-Gcs">
-                        <rect key="frame" x="20" y="152" width="48" height="48"/>
+                        <rect key="frame" x="20" y="152" width="54" height="48"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="alG-jU-vbS"/>
-                            <constraint firstAttribute="width" constant="48" id="knb-9m-hZ5"/>
+                            <constraint firstAttribute="width" constant="54" id="knb-9m-hZ5"/>
                         </constraints>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyDown" image="monitor" id="2M2-m1-Fvv"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyUpOrDown" image="monitor" id="2M2-m1-Fvv"/>
                     </imageView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32O-By-c0V">
-                        <rect key="frame" x="114" y="171" width="164" height="29"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="160" id="Ewd-Hf-bxh"/>
-                            <constraint firstAttribute="height" constant="29" id="KAM-hy-f1y"/>
-                        </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Deskolorize" id="JKP-yA-ys8">
-                            <font key="font" metaFont="system" size="24"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmj-0p-KrN">
-                        <rect key="frame" x="114" y="152" width="66" height="16"/>
+                        <rect key="frame" x="93" y="152" width="66" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="62" id="Jne-Lx-kug"/>
                             <constraint firstAttribute="height" constant="16" id="v6X-1k-rRw"/>
@@ -97,12 +85,24 @@ Icon made by Freepik from www.flaticon.com.</string>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32O-By-c0V">
+                        <rect key="frame" x="93" y="171" width="164" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="Ewd-Hf-bxh"/>
+                            <constraint firstAttribute="height" constant="29" id="KAM-hy-f1y"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Deskolorize" id="JKP-yA-ys8">
+                            <font key="font" metaFont="system" size="24"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="32O-By-c0V" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="21" id="C9r-E0-ivN"/>
                     <constraint firstItem="0kg-1R-e0l" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="FPO-NC-D2f"/>
-                    <constraint firstItem="Dmj-0p-KrN" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="48" id="Jki-2D-Ah4"/>
-                    <constraint firstItem="32O-By-c0V" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="48" id="JxZ-A0-Yw8"/>
                     <constraint firstItem="32O-By-c0V" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="RkK-C7-jQO"/>
+                    <constraint firstItem="Dmj-0p-KrN" firstAttribute="leading" secondItem="Z0h-tf-Gcs" secondAttribute="trailing" constant="21" id="cPN-D7-pfY"/>
                     <constraint firstItem="0kg-1R-e0l" firstAttribute="top" secondItem="Dmj-0p-KrN" secondAttribute="bottom" constant="50" id="gjF-rf-D7a"/>
                     <constraint firstItem="Dmj-0p-KrN" firstAttribute="top" secondItem="32O-By-c0V" secondAttribute="bottom" constant="3" id="hhS-NN-daE"/>
                     <constraint firstItem="Z0h-tf-Gcs" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="ln2-YL-ShZ"/>
@@ -117,6 +117,6 @@ Icon made by Freepik from www.flaticon.com.</string>
         </window>
     </objects>
     <resources>
-        <image name="monitor" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="monitor" width="512" height="458"/>
     </resources>
 </document>
